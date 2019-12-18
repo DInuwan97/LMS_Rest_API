@@ -21,7 +21,7 @@ class Navbar extends Component {
 
             <li className="nav-item">
                 <Link to="/register" className="nav-link">
-                    <h1><img src="https://img.icons8.com/dusk/64/000000/create-new.png" /> Register</h1>
+                    <h1><img src="https://img.icons8.com/dusk/64/000000/create-new.png"/> Register</h1>
                 </Link>
             </li>     
 
@@ -62,7 +62,7 @@ class Navbar extends Component {
 
     return(
         <nav className="navbar navbar-expand-lg navbar-light rounded">
-            <button 
+            {/* <button 
             className="navbar-toggler" 
             type="button" 
             data-toggle="collapse" 
@@ -71,7 +71,7 @@ class Navbar extends Component {
             aria-expand="false" 
             aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
-            </button>
+            </button> */}
 
             <div className="collapse navbar-collapse justify-content-md-center" id="navbar1">
 

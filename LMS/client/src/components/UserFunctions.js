@@ -15,17 +15,17 @@ export const register = newUser =>{
 }
 
 
-export const login = users =>{
+export const login = user =>{
     return axios
-    .post(users/login,{
-        email:users.email,
-        password:users.password
+    .post('users/login',{
+        email:user.email,
+        password:user.password
     })
     .then(res =>{
         localStorage.setItem('usertoken',res.data); //create the session
         return res.data
     })
     .catch(err =>{
-        console.log(err);
+        console.log(err)
     })
 }

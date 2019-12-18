@@ -15,8 +15,8 @@ class Login extends Component {
 
   }
   onChange(e){
-      this.setState({[e.target.name] : e.target.value})
-  }
+    this.setState({[e.target.name] : e.target.value})
+}
 
   onSubmit(e){
       e.preventDefault()
@@ -41,7 +41,7 @@ class Login extends Component {
           <h2>
               <div className="row">
                   <div className="col-md-6 mt-5 mx-auto">
-                      <form noValidate={this.onSubmit}>
+                      <form noValidate onSubmit={this.onSubmit}>
                           <h1 className="h3 mb-3 font-weight-normal">
 
                               <p align="center">Student Login </p>
@@ -60,7 +60,7 @@ class Login extends Component {
 
 
                                 <div className="form-group">
-                                    <label htmlFor="email"> Password </label>
+                                    <label htmlFor="password"> Password </label>
 
                                     <input 
                                         type="password" 

@@ -25,6 +25,7 @@ app.use(
 )
 
 app.use('/assignment',assignmentRoutes);
+app.use('/users',users);
 
 //file upload initializer
 app.use(fileUpload);
@@ -60,7 +61,7 @@ mongoose
 
 
 
-app.use('/users',users);
+
 
 app.listen(port,()=>{
     console.log("Server is listening on port " +port);

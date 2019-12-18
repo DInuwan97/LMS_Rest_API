@@ -5,7 +5,7 @@ let Assignment = require('../models/Assignment');
 
 //create
 assignmentRoute.route('/add').post(function (req,res){
-    let assignment = new Assignment(req.body);
+    const assignment = new Assignment(req.body);
     assignment.save()
         .then(assignment =>{
             res.status(200).json({'assignment': 'assignment added successfully'})
