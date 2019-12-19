@@ -6,7 +6,7 @@ class Navbar extends Component {
     logOut(e){
         e.preventDefault()
         localStorage.removeItem('usertoken');
-        this.props.history.push('/')
+        this.props.history.push(`/`)
     }
 
   render() {
@@ -45,7 +45,7 @@ class Navbar extends Component {
 
         
         <li className="nav-item">
-            <Link to="/assignements" className="nav-link">
+            <Link to="/assigments" className="nav-link">
                 <h1><img src="https://img.icons8.com/flat_round/64/000000/list--v3.png" /> Assignments </h1>
             </Link>
         </li>  
@@ -62,7 +62,7 @@ class Navbar extends Component {
 
     return(
         <nav className="navbar navbar-expand-lg navbar-light rounded">
-            {/* <button 
+            <button 
             className="navbar-toggler" 
             type="button" 
             data-toggle="collapse" 
@@ -71,7 +71,7 @@ class Navbar extends Component {
             aria-expand="false" 
             aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
-            </button> */}
+            </button>
 
             <div className="collapse navbar-collapse justify-content-md-center" id="navbar1">
 
@@ -83,7 +83,7 @@ class Navbar extends Component {
                     </li>
                 </ul>
 
-                {localStorage.userToken ? userLink: loginRegLink}
+                {localStorage.usertoken ? userLink: loginRegLink}
 
             </div>
 

@@ -7,8 +7,8 @@ import Login from './components/Login'
 import Register from './components/Register'
 //import Progressbar from './components/Progress'
 import Profile from './components/Profile'
-//import Fileupload from './components/Fileupload'
-//import AssigmentList from './components/AssignmentList'
+import Fileupload from './components/Fileupload'
+import AssigmentList from './components/AssignmentList'
 
 
 
@@ -24,6 +24,8 @@ class App extends Component{
                 <Route exact path="/register" component={Register}/>
                 <Route exact path="/login" component={Login}/>
                 <Route exact path="/profile" component={Profile}/>
+                <Route exact path="/uploads" component={Fileupload}/>
+                <Route exact path="/assigments" component={AssigmentList}/>
               </div>
           </div>
         </Router>
